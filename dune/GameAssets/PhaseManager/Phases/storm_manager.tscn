@@ -1,0 +1,70 @@
+[gd_scene load_steps=2 format=3 uid="uid://3vs47je5fgkw"]
+
+[ext_resource type="Script" uid="uid://beynjvd8d57bk" path="res://GameAssets/PhaseManager/Phases/storm_manager.gd" id="1_y2k87"]
+
+[node name="StormManager" type="Node"]
+script = ExtResource("1_y2k87")
+
+[node name="MoveStormUI" type="VBoxContainer" parent="."]
+offset_left = 425.0
+offset_top = 3.0
+offset_right = 649.0
+offset_bottom = 123.0
+metadata/_edit_group_ = true
+
+[node name="StormChoiceLabel" type="Label" parent="MoveStormUI"]
+layout_mode = 2
+text = "Storm Choice"
+horizontal_alignment = 1
+
+[node name="PlayerUnitChoiceHBox" type="HBoxContainer" parent="MoveStormUI"]
+layout_mode = 2
+alignment = 1
+
+[node name="PlayerAVBox" type="VBoxContainer" parent="MoveStormUI/PlayerUnitChoiceHBox"]
+layout_mode = 2
+
+[node name="PlayerALabel" type="Label" parent="MoveStormUI/PlayerUnitChoiceHBox/PlayerAVBox"]
+layout_mode = 2
+text = "Player A"
+horizontal_alignment = 1
+
+[node name="PlayerAValue" type="SpinBox" parent="MoveStormUI/PlayerUnitChoiceHBox/PlayerAVBox"]
+layout_mode = 2
+
+[node name="ConfirmA" type="Button" parent="MoveStormUI/PlayerUnitChoiceHBox/PlayerAVBox"]
+layout_mode = 2
+text = "Confirm"
+
+[node name="TotalVBox" type="VBoxContainer" parent="MoveStormUI/PlayerUnitChoiceHBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="TotalLabel" type="Label" parent="MoveStormUI/PlayerUnitChoiceHBox/TotalVBox"]
+layout_mode = 2
+text = "Total:"
+
+[node name="Total" type="Label" parent="MoveStormUI/PlayerUnitChoiceHBox/TotalVBox"]
+layout_mode = 2
+horizontal_alignment = 1
+
+[node name="PlayerBVBox" type="VBoxContainer" parent="MoveStormUI/PlayerUnitChoiceHBox"]
+layout_mode = 2
+
+[node name="PlayerBLabel" type="Label" parent="MoveStormUI/PlayerUnitChoiceHBox/PlayerBVBox"]
+layout_mode = 2
+text = "Player B"
+horizontal_alignment = 1
+
+[node name="PlayerBValue" type="SpinBox" parent="MoveStormUI/PlayerUnitChoiceHBox/PlayerBVBox"]
+layout_mode = 2
+
+[node name="ConfirmB" type="Button" parent="MoveStormUI/PlayerUnitChoiceHBox/PlayerBVBox"]
+layout_mode = 2
+text = "Confirm"
+
+[connection signal="_bothPlayersConfirmed" from="." to="." method="_on__both_players_confirmed"]
+[connection signal="value_changed" from="MoveStormUI/PlayerUnitChoiceHBox/PlayerAVBox/PlayerAValue" to="." method="_on_player_a_value_changed"]
+[connection signal="pressed" from="MoveStormUI/PlayerUnitChoiceHBox/PlayerAVBox/ConfirmA" to="." method="_on_confirm_a_pressed"]
+[connection signal="value_changed" from="MoveStormUI/PlayerUnitChoiceHBox/PlayerBVBox/PlayerBValue" to="." method="_on_player_b_value_changed"]
+[connection signal="pressed" from="MoveStormUI/PlayerUnitChoiceHBox/PlayerBVBox/ConfirmB" to="." method="_on_confirm_b_pressed"]

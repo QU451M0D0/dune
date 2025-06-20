@@ -1,0 +1,15 @@
+Marker2D
+Node2D
+CollisionPolygon2D
+Area2D
+Node
+CollisionShape2D
+StaticBody2D
+Sprite2D
+Button
+VBoxContainer
+Panel
+SpinBox
+Label
+HBoxContainer
+ItemList

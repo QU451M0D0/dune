@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://cltfhb6aacbt0"]
+
+[ext_resource type="Script" uid="uid://bafg1rvefyhyq" path="res://GameAssets/PhaseManager/phase_manager.gd" id="1_mwesf"]
+
+[node name="PhaseManager" type="Node"]
+script = ExtResource("1_mwesf")
+
+[node name="CurrentPhaseLabel" type="Label" parent="."]
+offset_left = 9.0
+offset_top = 51.0
+offset_right = 134.0
+offset_bottom = 82.0
+
+[node name="EndPhase" type="Button" parent="."]
+offset_left = 6.0
+offset_top = 9.0
+offset_right = 136.0
+offset_bottom = 46.0
+text = "End Phase"
+
+[connection signal="button_down" from="EndPhase" to="." method="_on_EndPhase_button_down"]

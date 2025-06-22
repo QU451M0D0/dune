@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkt0bmfopfky4"]
+
+[ext_resource type="Script" uid="uid://bqq84fbgpqdj0" path="res://GameAssets/GameBoard/sector.gd" id="1_wtsi3"]
+
+[node name="Sector" type="Area2D"]
+script = ExtResource("1_wtsi3")

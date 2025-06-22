@@ -5,3 +5,5 @@ extends Node
 @warning_ignore("unused_signal")
 
 signal _endPhaseSignal
+
+signal _spawnSpice(spiceCardPosition, spiceCardAmount)

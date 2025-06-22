@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dafb2itiwdg7w"]
+
+[ext_resource type="Script" uid="uid://lxl1cq0u3qev" path="res://GameAssets/GameBoard/territory.gd" id="1_0kpr7"]
+
+[node name="territory" type="Area2D"]
+script = ExtResource("1_0kpr7")

@@ -18,3 +18,7 @@ config/features=PackedStringArray("4.4", "Forward Plus")
 BoardState="*res://GameAssets/GlobalScripts/boardState.gd"
 GlobalSignals="*res://GameAssets/GlobalScripts/globalSignals.gd"
 GlobalDictionaries="*res://GameAssets/GlobalScripts/globalDictionaries.gd"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0

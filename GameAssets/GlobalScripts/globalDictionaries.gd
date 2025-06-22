@@ -6,28 +6,28 @@ extends Node
 #that other scripts will copy and compare to.
 
 @onready var spiceBlowDeckDictionary := {
-	"Broken Land" : 8,
-	"Cielago North" : 8,
-	"Cielago South" : 12,
-	"Funeral Plain" : 6,
-	"Habbanya Erg" : 8,
-	"Habbanya Ridge Flat" : 10,
-	"Hagga Basin" : 6,
-	"Old Gap" : 6,
-	"Red Chasm" : 8,
-	"Rock Outcroppings" : 6,
-	"Sihaya Ridge" : 6,
-	"South Mesa" : 10,
-	"The Great Flat" : 10,
-	"The Minor Erg" : 8,
-	"Wind Pass North" : 6,
-	"Sandtrout" : 0,
-	"Shai-Hulud0" : 0,
-	"Shai-Hulud1" : 0,
-	"Shai-Hulud2" : 0,
-	"Shai-Hulud3" : 0,
-	"Shai-Hulud4" : 0,
-	"Shai-Hulud5" : 0,
+	"Broken Land" : ["Broken Land A", 8],
+	"Cielago North" : ["Cielago North A", 8],
+	"Cielago South" : ["Cielago South B", 12],
+	"Funeral Plain" : ["Funeral Plain A", 6],
+	"Habbanya Erg" : ["Habbanya Erg B", 8],
+	"Habbanya Ridge Flat" : ["Habbanya Ridge Flat A", 10],
+	"Hagga Basin" : ["Hagga Basin B", 6],
+	"Old Gap" : ["Old Gap B", 6],
+	"Red Chasm" : ["Red Chasm A", 8],
+	"Rock Outcroppings" : ["Rock Outcroppings B", 6],
+	"Sihaya Ridge" : ["Sihaya Ridge A", 6],
+	"South Mesa" : ["South Mesa B", 10],
+	"The Great Flat" : ["The Great Flat A", 10],
+	"The Minor Erg" : ["The Minor Erg A", 8],
+	"Wind Pass North" : ["Wind Pass North B", 6],
+	"Sandtrout" : null,
+	"Shai-Hulud0" : null,
+	"Shai-Hulud1" : null,
+	"Shai-Hulud2" : null,
+	"Shai-Hulud3" : null,
+	"Shai-Hulud4" : null,
+	"Shai-Hulud5" : null,
 }
 
 @onready var territoriesSafeFromStorm := {
@@ -78,7 +78,7 @@ extends Node
 @onready var positions := {
 	"Polar Sink A" : {
 		"Territory": "Polar Sink",
-		"Sector" : null,
+		"Sector" : 18,
 		"Spice": 0
 		},
 	"The Great Flat A" : {
@@ -236,137 +236,276 @@ extends Node
 		"Sector" : 8,
 		"Spice": 0
 		},
-#		Stopped here
-
-
-	"Rim Wall West" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+		
+	"Rim Wall West A" : {
+		"Territory": "Rim Wall West",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"Basin" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Basin A" : {
+		"Territory": "Basin",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"Hole in the Rock" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Hole in the Rock A" : {
+		"Territory": "Hole in the Rock",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"Sihaya Ridge" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Sihaya Ridge A" : {
+		"Territory": "Sihaya Ridge",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"Shield Wall" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Shield Wall A" : {
+		"Territory": "Shield Wall",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"False Wall East" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Shield Wall B" : {
+		"Territory": "Shield Wall",
+		"Sector" : 7,
 		"Spice": 0
 		},
-	"Gara Kulon" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"False Wall East A" : {
+		"Territory": "False Wall East",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"The Minor Erg" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"False Wall East B" : {
+		"Territory": "False Wall East",
+		"Sector" : 8,
 		"Spice": 0
 		},
-	"Pasty Mesa" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"False Wall East C" : {
+		"Territory": "False Wall East",
+		"Sector" : 7,
 		"Spice": 0
 		},
-	"Red Chasm" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"False Wall East D" : {
+		"Territory": "False Wall East",
+		"Sector" : 6,
 		"Spice": 0
 		},
-	"South Mesa" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"False Wall East E" : {
+		"Territory": "False Wall East",
+		"Sector" : 5,
 		"Spice": 0
 		},
-	"Tuek's Sietch" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Gara Kulon A" : {
+		"Territory": "Gara Kulon",
+		"Sector" : 7,
 		"Spice": 0
 		},
-	"False Wall South" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"The Minor Erg A" : {
+		"Territory": "The Minor Erg",
+		"Sector" : 7,
 		"Spice": 0
 		},
-	"Harg Pass" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+		
+	"The Minor Erg B" : {
+		"Territory": "The Minor Erg",
+		"Sector" : 6,
 		"Spice": 0
 		},
-	"Cielago East" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"The Minor Erg C" : {
+		"Territory": "The Minor Erg",
+		"Sector" : 5,
 		"Spice": 0
 		},
-	"Cielago North" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"The Minor Erg D" : {
+		"Territory": "The Minor Erg",
+		"Sector" : 4,
 		"Spice": 0
 		},
-	"Cielago Depression" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Pasty Mesa A" : {
+		"Territory": "Pasty Mesa",
+		"Sector" : 7,
 		"Spice": 0
 		},
-	"Cielago South" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Pasty Mesa B" : {
+		"Territory": "Pasty Mesa",
+		"Sector" : 6,
 		"Spice": 0
 		},
-	"Meridian" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Pasty Mesa C" : {
+		"Territory": "Pasty Mesa",
+		"Sector" : 5,
 		"Spice": 0
 		},
-	"Cielago West" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Pasty Mesa D" : {
+		"Territory": "Pasty Mesa",
+		"Sector" : 4,
 		"Spice": 0
 		},
-	"Wind Pass North" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Red Chasm A" : {
+		"Territory": "Red Chasm",
+		"Sector" : 6,
 		"Spice": 0
 		},
-	"Habbanya Ridge Flat" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"South Mesa A" : {
+		"Territory": "South Mesa",
+		"Sector" : 5,
 		"Spice": 0
 		},
-	"Habbanya Sietch" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"South Mesa B" : {
+		"Territory": "South Mesa",
+		"Sector" : 4,
 		"Spice": 0
 		},
-	"False Wall West" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"South Mesa C" : {
+		"Territory": "South Mesa",
+		"Sector" : 3,
 		"Spice": 0
 		},
-	"Habbanya Erg" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"Tuek's Sietch A" : {
+		"Territory": "Tuek's Sietch",
+		"Sector" : 4,
 		"Spice": 0
 		},
-	"The Greater Flat" : {
-		"Territory": "Rock Outcroppings",
-		"Sector" : 12,
+	"False Wall South A" : {
+		"Territory": "False Wall South",
+		"Sector" : 4,
+		"Spice": 0
+		},
+	"False Wall South B" : {
+		"Territory": "False Wall South",
+		"Sector" : 3,
+		"Spice": 0
+		},
+	"Harg Pass A" : {
+		"Territory": "Harg Pass",
+		"Sector" : 4,
+		"Spice": 0
+		},
+	"Harg Pass B" : {
+		"Territory": "Harg Pass",
+		"Sector" : 3,
+		"Spice": 0
+		},
+	"Cielago East A" : {
+		"Territory": "Cielago East",
+		"Sector" : 3,
+		"Spice": 0
+		},
+	"Cielago East B" : {
+		"Territory": "Cielago East",
+		"Sector" : 2,
+		"Spice": 0
+		},
+	"Cielago North A" : {
+		"Territory": "Cielago North",
+		"Sector" : 2,
+		"Spice": 0
+		},
+	"Cielago North B" : {
+		"Territory": "Cielago North",
+		"Sector" : 1,
+		"Spice": 0
+		},
+	"Cielago North C" : {
+		"Territory": "Cielago North",
+		"Sector" : 0,
+		"Spice": 0
+		},
+	"Cielago Depression A" : {
+		"Territory": "Cielago Depression",
+		"Sector" : 2,
+		"Spice": 0
+		},
+	"Cielago Depression B" : {
+		"Territory": "Cielago Depression",
+		"Sector" : 1,
+		"Spice": 0
+		},
+	"Cielago Depression C" : {
+		"Territory": "Cielago Depression",
+		"Sector" : 0,
+		"Spice": 0
+		},
+	"Cielago South A" : {
+		"Territory": "Cielago South",
+		"Sector" : 2,
+		"Spice": 0
+		},
+	"Cielago South B" : {
+		"Territory": "Cielago South",
+		"Sector" : 1,
+		"Spice": 0
+		},
+	"Meridian A" : {
+		"Territory": "Meridian",
+		"Sector" : 1,
+		"Spice": 0
+		},
+	"Meridian B" : {
+		"Territory": "Meridian",
+		"Sector" : 0,
+		"Spice": 0
+		},
+	"Cielago West A" : {
+		"Territory": "Cielago West",
+		"Sector" : 0,
+		"Spice": 0
+		},
+	"Cielago West B" : {
+		"Territory": "Cielago West",
+		"Sector" : 17,
+		"Spice": 0
+		},
+	"Wind Pass North A" : {
+		"Territory": "Wind Pass North",
+		"Sector" : 17,
+		"Spice": 0
+		},
+	"Wind Pass North B" : {
+		"Territory": "Wind Pass North",
+		"Sector" : 16,
+		"Spice": 0
+		},
+	"Habbanya Ridge Flat A" : {
+		"Territory": "Habbanya Ridge Flat",
+		"Sector" : 17,
+		"Spice": 0
+		},
+	"Habbanya Ridge Flat B" : {
+		"Territory": "Habbanya Ridge Flat",
+		"Sector" : 16,
+		"Spice": 0
+		},
+	"Habbanya Sietch A" : {
+		"Territory": "Habbanya Sietch",
+		"Sector" : 16,
+		"Spice": 0
+		},
+	"False Wall West A" : {
+		"Territory": "False Wall West",
+		"Sector" : 17,
+		"Spice": 0
+		},
+	"False Wall West B" : {
+		"Territory": "False Wall West",
+		"Sector" : 16,
+		"Spice": 0
+		},
+	"False Wall West C" : {
+		"Territory": "False Wall West",
+		"Sector" : 15,
+		"Spice": 0
+		},
+	"Habbanya Erg A" : {
+		"Territory": "Habbanya Erg",
+		"Sector" : 16,
+		"Spice": 0
+		},
+	"Habbanya Erg B" : {
+		"Territory": "Habbanya Erg",
+		"Sector" : 15,
+		"Spice": 0
+		},
+	"The Greater Flat A" : {
+		"Territory": "The Greater Flat",
+		"Sector" : 15,
 		"Spice": 0
 		},
 }

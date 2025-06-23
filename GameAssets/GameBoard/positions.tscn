@@ -1,0 +1,345 @@
+[gd_scene load_steps=2 format=3 uid="uid://c366eotvbgaoo"]
+
+[ext_resource type="PackedScene" uid="uid://q1niiex70n0c" path="res://GameAssets/GameBoard/board_position.tscn" id="1_rhu2y"]
+
+[node name="Positions" type="Node2D"]
+
+[node name="CielagoNorthC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-51, 139)
+positionName = "Cielago North C"
+
+[node name="CielagoNorthA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(47, 130)
+positionName = "Cielago North A"
+
+[node name="CielagoWestB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-130, 165)
+positionName = "Cielago West B"
+
+[node name="CielagoWestA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-118, 226)
+positionName = "Cielago West A"
+
+[node name="CielagoDepressionC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-74, 235)
+positionName = "Cielago Depression C"
+
+[node name="CielagoDepressionB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(0, 246)
+positionName = "Cielago Depression B"
+
+[node name="CielagoDepressionA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(66, 239)
+positionName = "Cielago Depression A"
+
+[node name="MeridianB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-121, 327)
+positionName = "Meridian B"
+
+[node name="MeridianA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-43, 338)
+positionName = "Meridian A"
+
+[node name="CielagoSouthB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(14, 361)
+positionName = "Cielago South B"
+
+[node name="CielagoSouthA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(80, 305)
+positionName = "Cielago South A"
+
+[node name="CielagoEastB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(121, 263)
+positionName = "Cielago East B"
+
+[node name="CielagoEastA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(163, 249)
+positionName = "Cielago East A"
+
+[node name="SouthMesaC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(261, 257)
+positionName = "South Mesa C"
+
+[node name="SouthMesaB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(335, 143)
+positionName = "South Mesa B"
+
+[node name="SouthMesaA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(360, 62)
+positionName = "South Mesa A"
+
+[node name="Tuek\'sSietchA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(274, 152)
+positionName = "Tuek's Sietch A"
+
+[node name="FalseWallSouthB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(157, 175)
+positionName = "False Wall South B"
+
+[node name="FalseWallSouthA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(198, 134)
+positionName = "False Wall South A"
+
+[node name="PastyMesaD" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(204, 87)
+positionName = "Pasty Mesa D"
+
+[node name="PastyMesaC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(246, 42)
+positionName = "Pasty Mesa C"
+
+[node name="PastyMesaB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(251, -47)
+positionName = "Pasty Mesa B"
+
+[node name="PastyMesaA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(225, -117)
+positionName = "Pasty Mesa A"
+
+[node name="TheMinorErgA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(128, -63)
+positionName = "The Minor Erg A"
+
+[node name="TheMinorErgB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(133, -26)
+positionName = "The Minor Erg B"
+
+[node name="TheMinorErgC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(125, 24)
+positionName = "The Minor Erg C"
+
+[node name="TheMinorErgD" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(138, 71)
+positionName = "The Minor Erg D"
+
+[node name="ShieldWallB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(166, -124)
+positionName = "Shield Wall B"
+
+[node name="ShieldWallA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(147, -144)
+positionName = "Shield Wall A"
+
+[node name="FalseWallEastA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(56, -57)
+positionName = "False Wall East A"
+
+[node name="FalseWallEastB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(71, -42)
+positionName = "False Wall East B"
+
+[node name="FalseWallEastC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(80, -15)
+positionName = "False Wall East C"
+
+[node name="FalseWallEastD" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(75, 13)
+positionName = "False Wall East D"
+
+[node name="FalseWallEastE" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(61, 33)
+positionName = "False Wall East E"
+
+[node name="HargPassB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(56, 63)
+positionName = "Harg Pass B"
+
+[node name="HargPassA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(84, 56)
+positionName = "Harg Pass A"
+
+[node name="HoleInTheRockA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(165, -200)
+positionName = "Hole in the Rock A"
+
+[node name="SihayaRidgeA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(257, -266)
+positionName = "Sihaya Ridge A"
+
+[node name="GaraKulonA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(295, -201)
+positionName = "Gara Kulon A"
+
+[node name="BasinA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(212, -283)
+positionName = "Basin A"
+
+[node name="RimWallWestA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(147, -233)
+positionName = "Rim Wall West A"
+
+[node name="OldGapC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(191, -309)
+positionName = "Old Gap C"
+
+[node name="OldGapB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(85, -358)
+positionName = "Old Gap B"
+
+[node name="OldGapA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(50, -369)
+positionName = "Old Gap A"
+
+[node name="ArrakeenA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(120, -275)
+positionName = "Arrakeen A"
+
+[node name="ImperialBasinB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(63, -180)
+positionName = "Imperial Basin B"
+
+[node name="ImperialBasinC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(81, -129)
+positionName = "Imperial Basin C"
+
+[node name="ImperialBasinA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(22, -196)
+positionName = "Imperial Basin A"
+
+[node name="TsimpoA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-143, -218)
+positionName = "Tsimpo A"
+
+[node name="TsimpoB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-83, -282)
+positionName = "Tsimpo B"
+
+[node name="TsimpoC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-4, -321)
+positionName = "Tsimpo C"
+
+[node name="BrokenLandB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-14, -369)
+positionName = "Broken Land B"
+
+[node name="BrokenLandA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-136, -337)
+positionName = "Broken Land A"
+
+[node name="RockOutcroppingsB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-249, -267)
+positionName = "Rock Outcroppings B"
+
+[node name="HabbanyaRidgeFlatB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-322, 171)
+positionName = "Habbanya Ridge Flat B"
+
+[node name="RedChasmA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(364, -31)
+positionName = "Red Chasm A"
+
+[node name="ArsuntA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-32, -105)
+positionName = "Arsunt A"
+
+[node name="ArsuntB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-9, -140)
+positionName = "Arsunt B"
+
+[node name="CarthagA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-9, -247)
+positionName = "Carthag A"
+
+[node name="HaggaBasinB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-73, -193)
+positionName = "Hagga Basin B"
+
+[node name="HaggaBasinA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-103, -123)
+positionName = "Hagga Basin A"
+
+[node name="PlasticBasinB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-192, -231)
+positionName = "Plastic Basin B"
+
+[node name="PlasticBasinC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-133, -288)
+positionName = "Plastic Basin C"
+
+[node name="PlasticBasinA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-178, -100)
+positionName = "Plastic Basin A"
+
+[node name="SietchTabrA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-279, -162)
+positionName = "Sietch Tabr A"
+
+[node name="RockOutcroppingsA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-296, -216)
+positionName = "Rock Outcroppings A"
+
+[node name="BightOfTheCliffB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-338, -147)
+positionName = "Bight of the Cliff B"
+
+[node name="BightOfTheCliffA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-342, -109)
+positionName = "Bight of the Cliff A"
+
+[node name="FuneralPlainA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-354, -71)
+positionName = "Funeral Plain A"
+
+[node name="TheGreatFlatA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-360, -28)
+positionName = "The Great Flat A"
+
+[node name="TheGreaterFlatA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-266, 28)
+positionName = "The Greater Flat A"
+
+[node name="HabbanyaErgB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-350, 92)
+positionName = "Habbanya Erg B"
+
+[node name="HabbanyaErgA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-220, 97)
+positionName = "Habbanya Erg A"
+
+[node name="HabbanyaRidgeFlatA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-235, 273)
+positionName = "Habbanya Ridge Flat A"
+
+[node name="HabbanyaSietchA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-264, 172)
+positionName = "Habbanya Sietch A"
+
+[node name="FalseWallWestA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-180, 175)
+positionName = "False Wall West A"
+
+[node name="FalseWallWestB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-168, 105)
+positionName = "False Wall West B"
+
+[node name="FalseWallWestC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-146, 36)
+positionName = "False Wall West C"
+
+[node name="WindPassA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-115, 67)
+positionName = "Wind Pass A"
+
+[node name="WindPassB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-98, 17)
+positionName = "Wind Pass B"
+
+[node name="WindPassC" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-86, -15)
+positionName = "Wind Pass C"
+
+[node name="WindPassD" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-70, -39)
+positionName = "Wind Pass D"
+
+[node name="WindPassNorthB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-76, 47)
+positionName = "Wind Pass North B"
+
+[node name="WindPassNorthA" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(-84, 102)
+positionName = "Wind Pass North A"
+
+[node name="CielagoNorthB" parent="." instance=ExtResource("1_rhu2y")]
+position = Vector2(0, 141)
+positionName = "Cielago North B"

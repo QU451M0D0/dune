@@ -1,0 +1,102 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfcuaqi11eqm8"]
+
+[ext_resource type="PackedScene" uid="uid://dkt0bmfopfky4" path="res://GameAssets/GameBoard/sector.tscn" id="1_j7ada"]
+
+[node name="Sectors" type="Node2D"]
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sector0" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector0Collision" type="CollisionPolygon2D" parent="Sector0"]
+polygon = PackedVector2Array(-26, 46, -19, 59, -12, 68, -66, 380, -79, 377, -108, 369, -139, 360, -172, 345, -192, 333, -161, 280, -98, 170, -90, 156)
+
+[node name="Sector1" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector1Collision" type="CollisionPolygon2D" parent="Sector1"]
+polygon = PackedVector2Array(-12, 68, 13, 68, 40, 224, 48, 270, 67, 379, 27, 384, -33, 385, -66, 380)
+
+[node name="Sector2" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector2Collision" type="CollisionPolygon2D" parent="Sector2"]
+polygon = PackedVector2Array(13, 68, 32, 54, 64, 110, 88, 151, 193, 334, 153, 354, 102, 371, 67, 379, 48, 270, 40, 224)
+
+[node name="Sector3" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector3Collision" type="CollisionPolygon2D" parent="Sector3"]
+polygon = PackedVector2Array(32, 54, 32, 41, 40, 33, 62, 51, 94, 78, 264, 221, 295, 248, 282, 263, 253, 292, 224, 314, 193, 334, 88, 151, 64, 110)
+
+[node name="Sector4" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector4Collision" type="CollisionPolygon2D" parent="Sector4"]
+polygon = PackedVector2Array(40, 33, 47, 16, 151, 55, 323, 117, 363, 132, 358, 145, 349, 165, 334, 193, 318, 219, 295, 248, 264, 221, 94, 78, 62, 51)
+
+[node name="Sector5" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector5Collision" type="CollisionPolygon2D" parent="Sector5"]
+polygon = PackedVector2Array(47, 16, 59, 0, 172, 0, 351, 0, 386, 0, 381, 65, 375, 91, 363, 132, 323, 117, 151, 55)
+
+[node name="Sector6" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector6Collision" type="CollisionPolygon2D" parent="Sector6"]
+polygon = PackedVector2Array(59, 0, 63, -24, 97, -35, 363, -131, 370, -110, 378, -80, 384, -38, 386, 0, 351, 0, 172, 0)
+
+[node name="Sector7" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector7Collision" type="CollisionPolygon2D" parent="Sector7"]
+polygon = PackedVector2Array(63, -24, 50, -42, 77, -64, 267, -224, 296, -248, 311, -229, 326, -207, 339, -185, 350, -164, 363, -131, 97, -35)
+
+[node name="Sector8" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector8Collision" type="CollisionPolygon2D" parent="Sector8"]
+polygon = PackedVector2Array(50, -42, 35, -42, 28, -39, 22, -39, 117, -202, 127, -220, 162, -280, 193, -334, 214, -321, 235, -306, 251, -293, 257, -287, 277, -269, 296, -248, 267, -224, 77, -64)
+
+[node name="Sector9" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector9Collision" type="CollisionPolygon2D" parent="Sector9"]
+polygon = PackedVector2Array(22, -39, 16, -39, 9, -47, 13, -74, 62, -351, 67, -380, 87, -376, 110, -370, 139, -360, 168, -348, 193, -334, 162, -280, 127, -220, 117, -202, 31, -54)
+
+[node name="Sector10" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector10Collision" type="CollisionPolygon2D" parent="Sector10"]
+polygon = PackedVector2Array(9, -47, 0, -47, -7, -42, -31, -174, -37, -212, -45, -253, -48, -274, -61, -338, -67, -380, -37, -384, -22, -385, 0, -385, 21, -385, 36, -384, 67, -380, 62, -351, 13, -74)
+
+[node name="Sector11" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector11Collision" type="CollisionPolygon2D" parent="Sector11"]
+polygon = PackedVector2Array(-7, -42, -21, -36, -36, -63, -126, -220, -139, -240, -182, -316, -192, -333, -175, -343, -153, -353, -123, -365, -94, -374, -67, -380, -61, -338, -48, -274, -45, -253, -37, -212, -31, -174)
+
+[node name="Sector12" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector12Collision" type="CollisionPolygon2D" parent="Sector12"]
+polygon = PackedVector2Array(-21, -36, -42, -35, -73, -60, -147, -124, -251, -211, -294, -248, -281, -263, -259, -286, -225, -313, -192, -333, -182, -316, -139, -240, -126, -220, -36, -63)
+
+[node name="Sector13" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector13Collision" type="CollisionPolygon2D" parent="Sector13"]
+polygon = PackedVector2Array(-42, -35, -59, -22, -97, -35, -256, -93, -362, -132, -352, -156, -341, -179, -327, -203, -310, -228, -294, -248, -251, -211, -147, -124, -73, -60)
+
+[node name="Sector14" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector14Collision" type="CollisionPolygon2D" parent="Sector14"]
+polygon = PackedVector2Array(-59, -22, -71, 0, -120, 0, -385, 0, -385, -19, -383, -39, -379, -65, -376, -84, -372, -100, -362, -132, -256, -93, -152, -55, -97, -35)
+
+[node name="Sector15" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector15Collision" type="CollisionPolygon2D" parent="Sector15"]
+polygon = PackedVector2Array(-71, 0, -75, 23, -73, 27, -87, 32, -124, 46, -178, 65, -278, 101, -361, 131, -369, 111, -376, 83, -380, 62, -384, 30, -385, 0, -120, 0)
+
+[node name="Sector16" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector16Collision" type="CollisionPolygon2D" parent="Sector16"]
+polygon = PackedVector2Array(-73, 27, -67, 33, -61, 33, -51, 42, -109, 92, -139, 117, -207, 174, -225, 188, -261, 219, -295, 248, -307, 232, -320, 214, -331, 196, -343, 174, -353, 153, -361, 131, -278, 101, -178, 65, -124, 46, -87, 32)
+
+[node name="Sector17" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector17Collision" type="CollisionPolygon2D" parent="Sector17"]
+polygon = PackedVector2Array(-51, 42, -38, 48, -26, 46, -90, 156, -98, 170, -161, 280, -192, 333, -212, 322, -232, 308, -247, 296, -266, 278, -284, 260, -295, 248, -261, 219, -225, 188, -207, 174, -139, 117, -109, 92)
+
+[node name="Sector18" parent="." instance=ExtResource("1_j7ada")]
+
+[node name="Sector18" type="CollisionPolygon2D" parent="Sector18"]
+polygon = PackedVector2Array(-75, 23, -73, 27, -67, 33, -61, 33, -51, 42, -38, 48, -26, 46, -19, 59, -12, 68, 13, 68, 32, 54, 32, 41, 40, 33, 47, 16, 59, 0, 63, -24, 50, -42, 35, -42, 28, -39, 16, -39, 9, -47, 0, -47, -7, -42, -21, -36, -42, -35, -59, -22, -71, 0)

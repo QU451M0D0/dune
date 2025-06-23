@@ -12,7 +12,7 @@ extends Node
 	"Funeral Plain" : ["Funeral Plain A", 6],
 	"Habbanya Erg" : ["Habbanya Erg B", 8],
 	"Habbanya Ridge Flat" : ["Habbanya Ridge Flat A", 10],
-	"Hagga Basin" : ["Hagga Basin B", 6],
+	"Hagga Basin" : ["Hagga Basin A", 6],
 	"Old Gap" : ["Old Gap B", 6],
 	"Red Chasm" : ["Red Chasm A", 8],
 	"Rock Outcroppings" : ["Rock Outcroppings B", 6],
@@ -21,13 +21,13 @@ extends Node
 	"The Great Flat" : ["The Great Flat A", 10],
 	"The Minor Erg" : ["The Minor Erg A", 8],
 	"Wind Pass North" : ["Wind Pass North B", 6],
-	"Sandtrout" : null,
-	"Shai-Hulud0" : null,
-	"Shai-Hulud1" : null,
-	"Shai-Hulud2" : null,
-	"Shai-Hulud3" : null,
-	"Shai-Hulud4" : null,
-	"Shai-Hulud5" : null,
+	#"Sandtrout" : ["Sandtrout", 0], add this after base game
+	"Shai-Hulud0" : ["Shai-Hulud", 0],
+	"Shai-Hulud1" : ["Shai-Hulud", 0],
+	"Shai-Hulud2" : ["Shai-Hulud", 0],
+	"Shai-Hulud3" : ["Shai-Hulud", 0],
+	"Shai-Hulud4" : ["Shai-Hulud", 0],
+	"Shai-Hulud5" : ["Shai-Hulud", 0],
 }
 
 @onready var territoriesSafeFromStorm := {

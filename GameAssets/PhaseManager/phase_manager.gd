@@ -58,5 +58,3 @@ func _on_EndPhase_button_down() -> void:
 	_endPhase()
 	
 	phaseLabel.text = BoardState.phases[BoardState.currentPhase]
-	print(BoardState.phases[BoardState.currentPhase])
-	print(BoardState.currentTurn)

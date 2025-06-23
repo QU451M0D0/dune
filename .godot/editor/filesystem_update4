@@ -14,3 +14,8 @@ res://GameAssets/GameBoard/territory.gd
 res://GameAssets/GlobalScripts/globalDictionaries.gd
 res://GameAssets/GlobalScripts/boardState.gd
 res://GameAssets/PhaseManager/Phases/spice_blow_nexus_manager.gd
+res://GameAssets/Entities/spice.gd
+res://GameAssets/PhaseManager/phase_manager.gd
+res://GameAssets/GameBoard/spice_spawn.gd
+res://GameAssets/GameBoard/positions.tscn
+res://GameAssets/GlobalScripts/globalSignals.gd

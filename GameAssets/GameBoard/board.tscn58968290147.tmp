@@ -15,6 +15,7 @@ script = ExtResource("1_seh4k")
 [node name="PhaseManager" parent="." instance=ExtResource("1_rasdj")]
 
 [node name="BoardSprite" type="Sprite2D" parent="."]
+visible = false
 texture = ExtResource("1_kbqfu")
 metadata/_edit_lock_ = true
 

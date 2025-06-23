@@ -3,7 +3,9 @@ extends Node
 #State of the board of the current game
 
 #these objects represent the game state, not the original state of these
-
+const territoriesRef := preload("res://GameAssets/GameBoard/territories.tscn")
+const sectorsRef = preload("res://GameAssets/GameBoard/sectors.tscn")
+const positionsRef = preload("res://GameAssets/GameBoard/positions.tscn")
 
 @onready var currentTurn := 0
 
@@ -490,3 +492,12 @@ extends Node
 @onready var spiceBlowDiscardB := [
 	
 ]
+
+#func _ready() -> void:
+	#var territoriesInst = territoriesRef.instantiate()
+	#add_child(territoriesInst)
+	#var sectorsInst = sectorsRef.instantiate()
+	#add_child(sectorsInst)
+	#var positionsInst = positionsRef.instantiate()
+	#add_child(positionsInst)
+	#await get_tree().process_frame

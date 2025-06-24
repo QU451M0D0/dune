@@ -4,8 +4,6 @@ extends Node
 
 @warning_ignore("unused_signal") signal _endPhaseSignal
 
-@warning_ignore("unused_signal") signal _spawnSpice(spiceCardPosition, spiceCardAmount)
-
 @warning_ignore("unused_signal") signal _shaiHuludDrawn
 
 @warning_ignore("unused_signal") signal _updateSpiceValues
